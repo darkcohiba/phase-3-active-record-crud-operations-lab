@@ -5,11 +5,11 @@ class Movie < ActiveRecord::Base
     end
   
     def self.first_movie
-      Movie.first
+      self.first
     end
   
     def self.last_movie
-      Movie.last
+      last
     end
   
     def self.movie_count
